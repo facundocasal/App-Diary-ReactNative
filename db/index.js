@@ -6,7 +6,7 @@ export const init = () => {
   const promise = new Promise((resolve, reject) => {
     db.transaction((tx) => {
       tx.executeSql(
-        "create table if not exists memoriesPrueba5 (id integer primary key not null, userEmail text not null, title text not null, description text not null, date text not null, image text not null , place text not null, lat real not null, lng real not null);",
+        "create table if not exists memoriesApp (id integer primary key not null, userEmail text not null, title text not null, description text not null, date text not null, image text not null , place text not null, lat real not null, lng real not null);",
         [],
         () => {
           resolve();
@@ -33,7 +33,7 @@ export const insertMemories = (
   const promise = new Promise((resolve, reject) => {
     db.transaction((tx) => {
       tx.executeSql(
-        "insert into memoriesPrueba5 (userEmail,title, description, date, image, place, lat, lng) VALUES(?,?,?,?,?,?,?,?);",
+        "insert into memoriesApp (userEmail,title, description, date, image, place, lat, lng) VALUES(?,?,?,?,?,?,?,?);",
         [userEmail, title, description, date, image, place, lat, lng],
         (_, result) => resolve(result),
         (_, err) => reject(err)
@@ -46,7 +46,7 @@ export const fetchMemories = (userEmail) => {
   const promise = new Promise((resolve, reject) => {
     db.transaction((tx) => {
       tx.executeSql(
-        "SELECT * FROM memoriesPrueba5 WHERE userEmail = ?",
+        "SELECT * FROM memoriesApp WHERE userEmail = ?",
         [userEmail],
         (_, result) => {
           resolve(result);
@@ -62,7 +62,7 @@ export const deleteItem = (id) => {
   const promise = new Promise((resolve, reject) => {
     db.transaction((tx) => {
       tx.executeSql(
-        "DELETE FROM memoriesPrueba5 WHERE id = ?",
+        "DELETE FROM memoriesApp WHERE id = ?",
         [id],
         (_, result) => resolve(result),
         (_, err) => reject(err)
