@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "app-Diary-Facu",
+    "slug": "app-Diary-Facu",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": [
+      "landscape",
+      "portrait"
+    ],
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleidentifier": "com.facuDev-app",
+      "builNumber": "1.0.0",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.facuDev-app-Android",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ccc"
+      },
+      "permissions": [
+        "CAMERA",
+        "ACCES_FINE_LOCATION",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "confi": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCMXwKiBSab_OdIpn6Lsum6EigXEqej1nA"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "42ff85be-a716-4c36-8d01-0d548f5a9b7e"
+      }
+    },
+    "owner": "ksal23"
+  }
+}
