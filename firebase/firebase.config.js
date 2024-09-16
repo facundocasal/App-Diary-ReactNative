@@ -2,11 +2,11 @@
 
 // Your web app's Firebase configuration
 export const firebaseConfig = {
-  apiKey: "AIzaSyAsUsJm4e0g4lWpNU8CnXoFhr78fbFGUO4",
-  authDomain: "diary-app-coder.firebaseapp.com",
-  projectId: "diary-app-coder",
-  storageBucket: "diary-app-coder.appspot.com",
-  messagingSenderId: "13418971687",
-  appId: "1:13418971687:web:4fff28a84f4c76b1ccc402"
-};
+    apiKey: "", // Aquí debe ir la clave API de Firebase proporcionada por el usuario
+    authDomain: "", // Aquí debe ir el dominio de autenticación de Firebase
+    projectId: "", // Aquí debe ir el ID del proyecto de Firebase
+    storageBucket: "", // Aquí debe ir el bucket de almacenamiento de Firebase
+    messagingSenderId: "", // Aquí debe ir el ID del remitente de mensajes de Firebase
+    appId: "" // Aquí debe ir el ID de la aplicación de Firebase
+  };
 
